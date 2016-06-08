@@ -39,3 +39,4 @@ dependencies:
   - views_ui
   - editor
   - ckeditor
+  - coffee
