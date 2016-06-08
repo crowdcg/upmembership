@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ignore configuration files that may contain sensitive information.
 sites/*/*settings*.php
 
@@ -34,3 +35,60 @@ xmlrpc.php
 /profiles
 /scripts
 /themes
+=======
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+files/*
+
+# Pantheon commits a settings.php for environment-specific settings.
+# Place local settings in settings.local.php
+sites/*/settings.local.php
+sites/*/services*.yml
+
+# ** Only works in OSs that support newer versions of fnmatch (Bash 4+)
+/sites/default/**/files
+/sites/default/**/private
+
+# Ignore SimpleTest multi-site environment.
+sites/simpletest
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon
+
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+.sass-cache
+
+# Things in the core directory that Drupal 8 commits in the repository.
+!core/**/*.gz
+
+>>>>>>> 20d57a1e28b81c86b23f1c8b08fa83115b583ebf
